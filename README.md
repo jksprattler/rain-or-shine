@@ -22,7 +22,7 @@ Docker needs to be downloaded and installed on your local machine
 
 ## Future Enhancements
 1. Configure the python script and Docker build to automatically run the forecast results at 6am every day
-- import schedule | schedule==1.1.0
-- import time
-- schedule.every().day.at("12:00").do(job)
-- Run via cron job from docker?
+  - import schedule | schedule==1.1.0
+  - import time
+  - schedule.every().day.at("12:00").do(job)
+  - Run via cron job from docker?
