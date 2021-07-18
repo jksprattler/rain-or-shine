@@ -1,7 +1,7 @@
 # Usage
 
 ## Overview
-The `rain-or-shine.py` script performs an API call out to Weather Stack by auto-detecting the location of the user based on their IP address. The API call is run from within a Docker build file which parses arguments based on the following variables based on the API results for the day's forecast:\
+The `rain-or-shine.py` script performs an API call out to Weather Stack for the user's local weather data based on their IP address which it's able to auto-detect by geolocation. The API call is run from within a Docker build file which parses arguments based on the following variables depending on the API results for the day's forecast:\
 `rain` - If the precipitation value forecast is greater than 5% then you're recommended to grab an umbrella\
 `shine` - If the UV Index value forecast is greater than 3 then you're recommended to grab sunscreen
 
@@ -27,7 +27,7 @@ docker run dockerpython
 4. Review the results of the arguments that were parsed from the API results
 
 ## Future Enhancements
-1. Configure the python script and Docker build to automatically run the forecast results at 6am every day
+1. Configure the python script and Docker build files to automatically run the forecast results at 6am every day
    - import schedule | schedule==1.1.0
    - import time
    - schedule.every().day.at("12:00").do(job)
