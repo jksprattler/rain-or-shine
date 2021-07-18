@@ -12,15 +12,15 @@ The `rain-or-shine.py` script performs an API call out to Weather Stack by auto-
 Docker needs to be downloaded and installed on your local machine
 
 ## Procedure
-1. Clone the repo to your local machine:\
+1. Clone the repo to your local machine:
 ```
 git clone https://github.com/jksprattler/rain-or-shine.git
 ```
-2. From within the local directory where you've cloned the repo, Build the Dockerfile via shell:\
+2. From within the local directory where you've cloned the repo, Build the Dockerfile via shell:
 ```
 docker build -t dockerpython .
 ```
-3. From within the same dir, Run the Dockerfile:\
+3. From within the same dir, Run the Dockerfile:
 ```
 docker run dockerpython
 ```
