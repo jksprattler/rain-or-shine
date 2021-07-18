@@ -2,6 +2,7 @@
 
 ## Overview
 The `rain-or-shine.py` script performs an API call out to Weather Stack for the user's local weather data based on their IP address which it's able to auto-detect by geolocation. The API call is run from within a Docker build file which parses arguments based on the following variables depending on the API results for the day's forecast:\
+
 `rain` - If the precipitation value forecast is greater than 5% then you're recommended to grab an umbrella\
 `shine` - If the UV Index value forecast is greater than 3 then you're recommended to grab sunscreen
 
